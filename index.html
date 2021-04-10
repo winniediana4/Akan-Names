@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,51 +9,112 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Akan Names</title>
 </head>
+
 <body>
- <div class="container">
-<div class="jumbotron">
-  <h1>AKAN NAMES</h1> 
- <P class="description">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</P>
- <p>This App takes your birthday and calculates the day of the week you were born and returns your Akan name instead.</p>
- <div class="input-group input-group-lg mb-4">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Century</span>
+  <div class="container-fluid">
+    <div class="jumbotron-parent">
+      <h1>AKAN NAMES</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="jumbotron-left">
+            <P>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as
+              a 'day
+              name' which corresponds to the day in the week they were born.</P>
+            <table>
+              <tr>
+                <th>DAY</th>
+                <th>MALE</th>
+                <th>FEMALE</th>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>Kwasi</td>
+                <td>Akosua</td>
+              </tr>
+              <tr>
+                <td>Monday</td>
+                <td>Kwadwo</td>
+                <td>Adwoa</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>Kwabena</td>
+                <td>Abenaa</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>Kwaku</td>
+                <td>Akua</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>Yaw</td>
+                <td>Yaa</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>Kofi</td>
+                <td>Afua</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>Kwame</td>
+                <td>Ama</td>
+              </tr>
+            </table>
+            <h3>Checkout Your AKAN Name! &#8594</h3>
+          </div>
+        </div>
+        <div class="col-md-6 right">
+          <p>This App takes your birthday and calculates the day of the week you were born and returns your Akan name
+            instead.</p>
+          <div class="form">
+            <div class="input-group input-group-lg mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Century</span>
+              </div>
+              <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg"
+                placeholder="cc">
+            </div>
+
+            <div class="input-group input-group-lg mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Year</span>
+              </div>
+              <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg"
+                placeholder="yy">
+            </div>
+
+            <div class="input-group input-group-lg mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Month</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg"
+                placeholder="mm">
+            </div>
+
+            <div class="input-group input-group-lg">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Day</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg"
+                placeholder="dd">
+            </div>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline1">Male</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+            <label class="custom-control-label" for="customRadioInline2">Female</label>
+          </div>
+
+          <button type="submit" onclick="getName()" class="btn btn-danger">Submit</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg" placeholder="cc">
-</div>
-
-<div class="input-group input-group-lg mb-4">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Year</span>
-  </div>
-  <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg" placeholder="yy">
-</div>
-
-<div class="input-group input-group-lg mb-4">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Month</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg" placeholder="mm">
-</div>
-
-<div class="input-group input-group-lg">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Day</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg" placeholder="dd">
-</div>
-
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label" for="customRadioInline1">Male</label>
-</div>
-<div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-  <label class="custom-control-label" for="customRadioInline2">Female</label>
-</div>
-
-<button type="submit" onclick="getName()" class="btn btn-danger">Submit</button>
-</div>
- </div>
 </body>
+
 </html>

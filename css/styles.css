@@ -1,6 +1,56 @@
 body{
-  background-color: black;
+  background-color: rgb(12, 9, 3);
 }
-.jumbotron{
+.jumbotron-parent{
   background-color: goldenrod;
+  margin: 50px;
+  height: 700px;
+}
+.jumbotron-left{
+  background-image: url("https://www3.assets.heroku.com/assets/wallpapers/electric-pride/thumb-6308bb9769108c0c753c86792f7c9346c989b866c727ca9446ffe238b9fa99a3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  height: 600px;
+  color: rgb(253, 247, 236);
+  font-weight: bold;
+  margin: 3px;
+  padding: 5px;
+}
+h1{
+  color: rgb(88, 32, 6);
+  text-align: center;
+  font-weight: bolder;
+}
+p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: oblique;
+}
+table{
+  /* border: 1px solid goldenrod; */
+ width: 100%;
+ font-size: 20px;
+ margin: 10px;
+}
+th{
+  font-weight: bolder;
+  color: goldenrod;
+}
+h3{
+  color: rgb(235, 187, 65);
+  text-align: center;
+  padding: 80px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+button{
+  margin: 10px;
+  clear: ;
+}
+.form{
+  padding: 10px;
+  font-size: 15px;
 }
