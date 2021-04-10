@@ -44,3 +44,13 @@ function checkDayOfWeek(){
 let daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 
+//get  button
+function checkGender(){
+  var gen = document.getElementsByName("rads");
+  if(gen[0].checked == true){
+      var gender = "male";
+  }else if(gen[1].checked == true){
+      var gender = "female";
+  }else {
+    console.log("pass");//Test buttons
+  }
