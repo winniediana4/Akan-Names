@@ -33,3 +33,8 @@ function calculateDay(){
     return dayOfWeek;
   }
 }
+function checkDayOfWeek(){
+  day = calculateDay();
+   checkGender();
+   console.log("Function works");
+}
