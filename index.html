@@ -12,33 +12,34 @@
  <div class="container">
 <div class="jumbotron">
   <h1>AKAN NAMES</h1> 
- <P class="description">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.</P>
+ <P class="description">Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</P>
+ <p>This App takes your birthday and calculates the day of the week you were born and returns your Akan name instead.</p>
  <div class="input-group input-group-lg mb-4">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-lg">Century</span>
   </div>
-  <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg">
+  <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg" placeholder="cc">
 </div>
 
 <div class="input-group input-group-lg mb-4">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-lg">Year</span>
   </div>
-  <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg">
+  <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg" placeholder="yy">
 </div>
 
 <div class="input-group input-group-lg mb-4">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-lg">Month</span>
   </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg" placeholder="mm">
 </div>
 
 <div class="input-group input-group-lg">
   <div class="input-group-prepend">
     <span class="input-group-text" id="inputGroup-sizing-lg">Day</span>
   </div>
-  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+  <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg" placeholder="dd">
 </div>
 
 <div class="custom-control custom-radio custom-control-inline">
@@ -50,7 +51,7 @@
   <label class="custom-control-label" for="customRadioInline2">Female</label>
 </div>
 
-<button class="btn btn-warning">Submit</button>
+<button type="submit" onclick="getName()" class="btn btn-warning">Submit</button>
 </div>
  </div>
 </body>
