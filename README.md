@@ -18,7 +18,7 @@ View [live](https://winniediana4.github.io/Akan-Names/)
 ## Known Bug
 {No known bugs.}
 # Project screenshot
-![alt Akan-Names](Akan-names.png)
+![alt Akan-Names](Akan.png)
 ## Technologies Used
 1. HTML
 1. CSS
