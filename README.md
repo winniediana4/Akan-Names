@@ -17,6 +17,8 @@ To access this project on your local files, you can clone it using these steps
 View [live](https://winniediana4.github.io/Akan-Names/) 
 ## Known Bug
 {No known bugs.}
+# Project screenshot
+![alt Akan-Names](Akan-names.png)
 ## Technologies Used
 1. HTML
 1. CSS
