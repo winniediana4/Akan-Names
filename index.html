@@ -89,7 +89,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text" id="month">Month</span>
               </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg"
+              <input type="text" class="form-control" aria-label="Large" aria-required="true" aria-invalid="false" aria-describedby="inputGroup-sizing-lg"
                 placeholder="mm">
             </div>
 
@@ -101,16 +101,20 @@
                 placeholder="dd">
             </div>
           </div>
+          <div id="gender">
           <div class="custom-control custom-radio custom-control-inline">
+            <option value="1"></option>
             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline1">Male</label>
           </div>
           <div class="custom-control custom-radio custom-control-inline">
+            <option value="2"></option>
             <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
             <label class="custom-control-label" for="customRadioInline2">Female</label>
           </div>
-
+        </div>
           <button type="submit" onclick="getName()" class="btn btn-danger">Submit</button>
+          <h4>Birth Name: </h4>
         </div>
       </div>
     </div>
