@@ -3,7 +3,7 @@ function getDayBorn() {
   alert("Hi there! We'll start by providing the day born. Click ok to continue"); // Simple Welcome Message
   let dateString = prompt("Enter date born in the following format: mm/dd/yyyy"); // Getting the date as a string
   let gender = prompt("What is your gender, female or male?"); // Prompt the user choose gender
-  document.getElementById('displayNameHere').innerHTML = "Your Birth Name is " + getNameFromDate(dateString, gender);
+  document.getElementById('displayNameHere').innerHTML = "Your Akan Name is " + getNameFromDate(dateString, gender);
 }
 // Business Logic
 function getNameFromDate(dateString, gender) {
