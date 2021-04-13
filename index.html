@@ -68,53 +68,10 @@
         <div class="col-md-6 right">
           <p>This App takes your birthday and calculates the day of the week you were born and returns your Akan name
             instead.</p>
-          <div class="form">
-            <div class="input-group input-group-lg mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="century">Century</span>
-              </div>
-              <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg"
-                placeholder="cc">
-            </div>
-
-            <div class="input-group input-group-lg mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="year">Year</span>
-              </div>
-              <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg"
-                placeholder="yy">
-            </div>
-
-            <div class="input-group input-group-lg mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="month">Month</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-required="true" aria-invalid="false" aria-describedby="inputGroup-sizing-lg"
-                placeholder="mm">
-            </div>
-
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="date">Day</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg"
-                placeholder="dd">
-            </div>
-          </div>
-          <div id="gender">
-          <div class="custom-control custom-radio custom-control-inline">
-            <option value="1"></option>
-            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline1">Male</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <option value="2"></option>
-            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline2">Female</label>
-          </div>
-        </div>
-          <button type="submit" onclick="getName()" class="btn btn-danger">Submit</button>
+          <h4>Click to get your Akan name</h4>
+          <button onclick="getDayBorn()">Click to get Akan</button>
           <h4>Birth Name: </h4>
+         <p><span id="displayNameHere"></span></p>
         </div>
       </div>
     </div>
