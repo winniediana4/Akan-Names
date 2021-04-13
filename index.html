@@ -68,53 +68,20 @@
         <div class="col-md-6 right">
           <p>This App takes your birthday and calculates the day of the week you were born and returns your Akan name
             instead.</p>
-          <div class="form">
-            <div class="input-group input-group-lg mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="century">Century</span>
-              </div>
-              <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg"
-                placeholder="cc">
-            </div>
 
-            <div class="input-group input-group-lg mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="year">Year</span>
-              </div>
-              <input type="text" class="form-control" aria-label="large" aria-describedby="inputGroup-sizing-lg"
-                placeholder="yy">
-            </div>
-
-            <div class="input-group input-group-lg mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="month">Month</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-required="true" aria-invalid="false" aria-describedby="inputGroup-sizing-lg"
-                placeholder="mm">
-            </div>
-
-            <div class="input-group input-group-lg">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="date">Day</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg"
-                placeholder="dd">
-            </div>
+          <form action="form.php">
+            <input type="date" id="date" required>
+            <div id="gender">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
           </div>
-          <div id="gender">
-          <div class="custom-control custom-radio custom-control-inline">
-            <option value="1"></option>
-            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline1">Male</label>
-          </div>
-          <div class="custom-control custom-radio custom-control-inline">
-            <option value="2"></option>
-            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-            <label class="custom-control-label" for="customRadioInline2">Female</label>
-          </div>
-        </div>
-          <button type="submit" onclick="getName()" class="btn btn-danger">Submit</button>
+            <button type="submit" name="form_submit" onclick="getDayBorn()" class="btn btn-danger">Submit</button>
+            <input class="btn btn-danger" type="reset" value="Reset">
+          </form>
           <h4>Birth Name: </h4>
+          <p><span id="displayNameHere"></span></p>
         </div>
       </div>
     </div>
